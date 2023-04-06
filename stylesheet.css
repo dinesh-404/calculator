@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "analog";
-  src: url("DigitalNormal-xO6j.ttf");
-}
+
 body {
   padding: 0px;
   margin: 0;
@@ -9,8 +6,8 @@ body {
 }
 .calculator-main {
   margin: 30px;
-  width: 400px;
-  padding: 10px;
+  width: 350px;
+  padding: 20px;
   background: rgb(12, 36, 62);
   border-radius: 10px;
 }
@@ -22,31 +19,35 @@ body {
   border: none;
   background: rgb(12, 36, 62);
   color: white;
-  padding-right: 5px;
+  padding-right: 10px;
   border-radius: 10px;
 }
 
 .btn {
-  width: 80px;
-  height: 80px;
-  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  margin: 2px;
+  font-size: 20px;
   border-radius: 50%;
   border: none;
   background: none;
   color: rgba(255, 255, 255, 0.923);
-  transition: box-shadow 0.5s;
-
+  transition: box-shadow 0.2s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .bigbtn {
   height: 240px;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .clr-light {
   background: rgb(91, 125, 162);
   box-shadow: none;
-  font-size: 40px;
+  font-size: 25px;
+  color:rgba(255, 255, 255, 0.7);
 }
 .btn:hover {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#clr{
+    background:rgb(171, 48, 48);
 }

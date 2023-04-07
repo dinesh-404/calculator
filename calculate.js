@@ -11,8 +11,10 @@ for (let i = 0; i < btn.length; i++) {
     } else if (btn[i].value == "=") {
       ans.value = eval(ans.value);
     } else if (btn[i].value == "DEL") {
-      if (ans.value != "0") {
+      if (ans.value.length > 1) {
         ans.value = ans.value.slice(0, -1);
+      } else {
+        ans.value = 0;
       }
     } else {
       ans.value += btn[i].value;

@@ -12,15 +12,19 @@ body {
   border-radius: 10px;
 }
 #result {
-  width: 100%;
+  width:100%;
   height: 160px;
-  font-size: 90px;
+  font-size: 80px;
   text-align: right;
   border: none;
   background: rgb(12, 36, 62);
   color: white;
   padding-right: 10px;
   border-radius: 10px;
+}
+
+#result:focus{
+  outline: none;
 }
 
 .btn {

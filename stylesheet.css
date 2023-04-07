@@ -2,7 +2,7 @@
 body {
   padding: 0px;
   margin: 0;
-  background: rgba(21, 77, 80, 0.728);
+  background: rgb(21, 77, 80, 0.728);
 }
 .calculator-main {
   margin: 30px;
@@ -37,9 +37,9 @@ body {
   border-radius: 50%;
   border: none;
   background: none;
-  color: rgba(255, 255, 255, 0.923);
+  color: rgb(255, 255, 255, 0.923);
   transition: box-shadow 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .bigbtn {
   height: 240px;
@@ -49,10 +49,10 @@ body {
   background: rgb(91, 125, 162);
   box-shadow: none;
   font-size: 25px;
-  color:rgba(255, 255, 255, 0.7);
+  color:rgb(255, 255, 255, 0.7);
 }
 .btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgb(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 #clr{
     background:rgb(171, 48, 48);

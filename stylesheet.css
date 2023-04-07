@@ -2,7 +2,7 @@
 body {
   padding: 0px;
   margin: 0;
-  background: rgba(255, 0, 0, 0.306);
+  background: rgba(21, 77, 80, 0.728);
 }
 .calculator-main {
   margin: 30px;
@@ -10,6 +10,8 @@ body {
   padding: 20px;
   background: rgb(12, 36, 62);
   border-radius: 10px;
+  border: none;
+  box-shadow:  rgb(15, 51, 90) 0px 60px 100px -7px;
 }
 #result {
   width:100%;

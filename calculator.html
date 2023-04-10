@@ -6,6 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function showVal(a) {
+            let ans = document.getElementById('result')
+            if (ans.value == 0) {
+                if (a == "DEL") {
+                    ans.value = 0;
+                }
+                else {
+                    ans.value = a;
+                }
+            }
+            else if (a == "+") {
+                ans.value += a;
+            }
+            else if (a == "=") {
+                ans.value = eval(ans.value);
+            }
+            else if (a == "DEL") {
+                if (ans.value.length > 1) {
+                    ans.value = ans.value.slice(0, -1);
+                } else {
+                    ans.value = 0;
+                }
+            }
+            else {
+                ans.value += a;
+            }
+
+
+        };
+    </script>
     <title>Calculator</title>
 </head>
 
@@ -16,36 +47,35 @@
                 <td colspan="4"><input type="text" value="0" name="result" id="result"></td>
             </tr>
             <tr>
-                <td><input type="button" class="btn clr-light" value="+"></td>
-                <td><input type="button" class="btn clr-light" value="-"></td>
-                <td><input type="button" class="btn clr-light" value="*"></td>
-                <td><input type="button" class="btn clr-light" value="/"></td>
+                <td><input type="button" class="btn clr-light" onclick="showVal('+')" value="+"></td>
+                <td><input type="button" class="btn clr-light" onclick="showVal('-')" value="-"></td>
+                <td><input type="button" class="btn clr-light" onclick="showVal('*')" value="*"></td>
+                <td><input type="button" class="btn clr-light" onclick="showVal('*')" value="/"></td>
             </tr>
             <tr>
-                <td><input type="button" class="btn" value="7"></td>
-                <td><input type="button" class="btn" value="8"></td>
-                <td><input type="button" class="btn" value="9"></td>
-                <td><input type="button" class="btn clr-light" value="DEL"></td>
+                <td><input type="button" class="btn" value="7" onclick="showVal('7')"></td>
+                <td><input type="button" class="btn" value="8" onclick="showVal('8')"></td>
+                <td><input type="button" class="btn" value="9" onclick="showVal('9')"></td>
+                <td><input type="button" class="btn clr-light" onclick="showVal('DEL')" value="DEL"></td>
             </tr>
             <tr>
-                <td><input type="button" class="btn" value="4"></td>
-                <td><input type="button" class="btn" value="5"></td>
-                <td><input type="button" class="btn" value="6"></td>
-                <td rowspan="3"><input type="button" class="btn clr-light bigbtn" value="="></td>
+                <td><input type="button" class="btn" onclick="showVal('4')" value="4"></td>
+                <td><input type="button" class="btn" onclick="showVal('5')" value="5"></td>
+                <td><input type="button" class="btn" onclick="showVal('6')" value="6"></td>
+                <td rowspan="3"><input type="button" onclick="showVal('=')" class="btn clr-light bigbtn" value="="></td>
             </tr>
             <tr>
-                <td><input type="button" class="btn" value="1"></td>
-                <td><input type="button" class="btn" value="2"></td>
-                <td><input type="button" class="btn" value="3"></td>
+                <td><input type="button" class="btn" onclick="showVal('1')" value="1"></td>
+                <td><input type="button" class="btn" onclick="showVal('2')" value="2"></td>
+                <td><input type="button" class="btn" onclick="showVal('3')" value="3"></td>
             </tr>
             <tr>
-                <td><input type="button" class="btn" id="clr" value="AC"></td>
-                <td><input type="button" class="btn" value="0"></td>
-                <td><input type="button" class="btn" value="."></td>
+                <td><input type="button" class="btn" onclick="showVal('CLR')" id="clr" value="AC"></td>
+                <td><input type="button" class="btn" onclick="showVal('0')" value="0"></td>
+                <td><input type="button" class="btn" onclick="showVal('.')" value="."></td>
             </tr>
         </table>
     </center>
-    <script src="calculate.js"></script>
 </body>
 
 </html>
